@@ -447,7 +447,7 @@
             _this.getck()
           }
           port.on('data', function (data) {
-            console.log(data)
+            
             if (_this._jieshou == 1) {
               let BuffMsg = Buffer.from(data, 'hex')
               BuffMsg = encoding.convert(BuffMsg, "UTF8", "GBK").toString()
